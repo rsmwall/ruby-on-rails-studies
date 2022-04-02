@@ -16,24 +16,24 @@
 
 # exemplo 01
 
-# saudacao {puts 'ola'}
+saudacao {puts 'ola'}
 
 # # exemplo 2 - com parâmetros
 
-# saudacao_verbosa('PuneRuby') {puts 'ola'}
+saudacao_verbosa('PuneRuby') {puts 'ola'}
 
 # exemplo de uso yield
 
-# def chama_bloco
-#   puts 'Início do método'
+def chama_bloco
+  puts 'Início do método'
 
-#   # chamar o bloco
+  # chamar o bloco
 
-#   yield
-#   yield
+  yield
+  yield
 
-#   puts 'Fim do método'
-# end
+  puts 'Fim do método'
+end
 
 # chama_bloco {puts 'Dentro do método'}
 
