@@ -29,7 +29,7 @@ puts var4[2]
 
 # uma vírgula no final é ignorada
 
-name = ['Satish', 'Talim', 'Ruby', 'Java']
+name = ['Satish', 'Talim', 'Ruby', 'Java',]
 puts name[0]
 puts name[1]
 puts name[2]
