@@ -6,7 +6,7 @@
     menor que 1.0
 
     se der a ele um parâmetro inteiro ex.: rand(5), ele apresntará 
-    um inteiro maior ou igual a o e menor que 5.
+    um inteiro maior ou igual a 0 e menor que 5.
   
 =end
 
