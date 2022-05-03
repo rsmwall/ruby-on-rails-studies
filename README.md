@@ -9,7 +9,7 @@ Among these files are:
  * Independent Questions
  * Challenges
 
-The Ruby version used is 3.0.3p157.
+The Ruby version used is 3.1.2p20.
 This version can be installed from [Ruby page](https://www.ruby-lang.org/pt/).
 
 The installed version can be viewed with the following command:
