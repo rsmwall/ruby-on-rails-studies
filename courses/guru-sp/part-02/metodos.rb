@@ -32,7 +32,7 @@ puts(ola1('Rafael'))
 =begin
   
     interpolação é o processo de inserir o resultado de uma
-    expressão em uma string lateral
+    expressão em uma string literal
 
     o operador de interpolação #{...} é avaliado separadamente
   
