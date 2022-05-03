@@ -4,7 +4,7 @@
 
     Também conhecidos como arrays associativos, maspas ou dicionários
 
-    Quando se armazena um valor em um hash na verdade sse fornece dois objetos
+    Quando se armazena um valor em um hash na verdade se fornece dois objetos
     o índice (normalmente chamado de chave) e o valor desse indice
 
     Parecido com arrays, mas os arrays só podem ser indexados por inteiros
