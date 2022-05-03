@@ -35,7 +35,7 @@ def chama_bloco
   puts 'Fim do método'
 end
 
-# chama_bloco {puts 'Dentro do método'}
+chama_bloco {puts 'Dentro do método'}
 
 # pode-se prover parâmetros para a chamada yield
 # estes serão passados ao bloco
