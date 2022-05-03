@@ -6,7 +6,7 @@
     uma interrogação (?) no final
 
     métodos perigosos ou que modificam o objeto podem
-    ser nomeados com exclamação (!) no final (Bnag methods)
+    ser nomeados com exclamação (!) no final (Bang methods)
   
 =end
 
