@@ -1,4 +1,4 @@
-# Ruby Studies <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain.svg" width="25px"/> #
+# Ruby Studies <img src="https://cdn.iconscout.com/icon/free/png-64/ruby-3629029-3030386.png" width="25px"/> #
 
 In this repository are files using the <strong>Ruby</strong> programming language,
 That were/are part of my journey with language.
@@ -23,16 +23,16 @@ The installed version can be viewed with the following command:
 The [courses](https://github.com/rsmwall/ruby-study/tree/main/courses) used are free
 and easy access, in addition to being online, being them in video or text format.
 
-The courses marked with the following emoji: 🇧🇷 are <strong>Brazilian</strong> courses and/or that are in <strong>Portuguese</strong>.
+The courses marked with the following emoji: <img src="https://cdn.icon-icons.com/icons2/2087/PNG/512/brazil_icon_127818.png" width="18x"/> are <strong>Brazilian</strong> courses and/or that are in <strong>Portuguese</strong>.
 
-### 🇧🇷 Guru-sp ###
+### <img src="https://cdn.icon-icons.com/icons2/2087/PNG/512/brazil_icon_127818.png" width="22x"/> Guru-sp ###
 
 The guru-sp tutorial is available on the page [Ruby - Mais um tutorial](https://guru-sp.github.io/tutorial_ruby/).
 
 The tutorial is divided into parts that here in the repository are in [guru-sp](https://github.com/rsmwall/ruby-study/tree/main/courses/guru-sp). 
 Inside the folder are the tutorial subdivisions (numbered parts related to the tutorial).
 
-### 🇧🇷 OneBitCode ###
+### <img src="https://cdn.icon-icons.com/icons2/2087/PNG/512/brazil_icon_127818.png" width="22x"/> OneBitCode ###
 
 The OneBitCode tutorial is available in the youtube playlist [Curso completo de Ruby](https://www.youtube.com/playlist?list=PLdDT8if5attEOcQGPHLNIfnSFiJHhGDOZ).
 
