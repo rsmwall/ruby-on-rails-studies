@@ -9,7 +9,7 @@ Among these files are:
  * Independent Questions
  * Challenges
 
-The Ruby version used is 3.1.2p20.
+The Ruby version used is <strong>3.1.2p20</strong>.
 This version can be installed from [Ruby page](https://www.ruby-lang.org/pt/).
 
 The installed version can be viewed with the following command:
@@ -23,12 +23,20 @@ The installed version can be viewed with the following command:
 The [courses](https://github.com/rsmwall/ruby-study/tree/main/courses) used are free
 and easy access, in addition to being online, being them in video or text format.
 
-### Guru-sp ###
+The courses marked with the following emoji: 🇧🇷 are <strong>Brazilian</strong> courses and/or that are in <strong>Portuguese</strong>.
+
+### 🇧🇷 Guru-sp ###
 
 The guru-sp tutorial is available on the page [Ruby - Mais um tutorial](https://guru-sp.github.io/tutorial_ruby/).
 
 The tutorial is divided into parts that here in the repository are in [guru-sp](https://github.com/rsmwall/ruby-study/tree/main/courses/guru-sp). 
 Inside the folder are the tutorial subdivisions (numbered parts related to the tutorial).
+
+### 🇧🇷 OneBitCode ###
+
+The OneBitCode tutorial is available in the youtube playlist [Curso completo de Ruby](https://www.youtube.com/playlist?list=PLdDT8if5attEOcQGPHLNIfnSFiJHhGDOZ).
+
+The tutorial is divided into ten videos in the youtube playlist and its codes here in this repositorio can be found in [onebitcode](https://github.com/rsmwall/ruby-studies/tree/main/courses/onebitcode). Inside there are sub-folders separated by video/content.
 
 ## Exercises ##
 
