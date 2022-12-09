@@ -47,3 +47,5 @@ over the internet, they are usually divided into numbered lists, or with an indi
 
 The [challenges](https://github.com/rsmwall/ruby-study/tree/main/challenges) are usually larger and
 more complex, some have their own repositories that will be referenced here.
+
+- [uri](https://github.com/rsmwall/ruby-on-rails-studies/tree/main/challenges/uri)
