@@ -1,4 +1,4 @@
-# Ruby Studies <img src="https://cdn.iconscout.com/icon/free/png-64/ruby-3629029-3030386.png" width="25px"/> #
+# Ruby on Rails Studies <img src="https://cdn.iconscout.com/icon/free/png-64/ruby-3629029-3030386.png" width="25px"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" width="25px"/> #
 
 In this repository are files using the <strong>Ruby</strong> programming language,
 That were/are part of my journey with language.
