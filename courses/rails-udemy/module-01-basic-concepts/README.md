@@ -2,7 +2,7 @@
 
 ### Gerar um novo projeto Rails
 
-        rails new *<project_name>*
+        rails new <project_name>
 
 ### Levantar o servidor ( hospedado em **localhost:3000** )
 
