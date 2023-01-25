@@ -91,3 +91,4 @@ The [challenges](https://github.com/rsmwall/ruby-study/tree/main/challenges) are
 more complex, some have their own repositories that will be referenced here.
 
 - [uri](https://github.com/rsmwall/ruby-on-rails-studies/tree/main/challenges/uri)
+- [quadratic-equation](https://github.com/rsmwall/ruby-on-rails-studies/blob/main/challenges/quadradic-equation.rb) (A solo challenge where the program is given a quadratic equation calculates using bhaskara's formula, and shows how many and what are the real roots of the equation.)
