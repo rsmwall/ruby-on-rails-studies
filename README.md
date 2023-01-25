@@ -9,23 +9,46 @@ Among these files are:
  * Independent Questions
  * Challenges
 
-The Ruby version used is <strong>3.1.2p20</strong>.
-This version can be installed from [Ruby page](https://www.ruby-lang.org/pt/).
+<strong>Some courses and exercises use only Ruby, while others use Rails, they are separate for each one.</strong>
+
+## Versions
+
+The versions used for both Ruby and Rails are different depending on the course because they were made at different times and as new versions of the language and framework are released.
+
+If you want to test the code, it is recommended to use the indicated version to avoid errors.
+
+Ruby versions can be installed through the language's official website [Ruby](https://www.ruby-lang.org/pt/).
 
 The installed version can be viewed with the following command:
 
       ruby --version
 
+Rails can be installed using this command:
+
+      gem install rails
+
+The installed version can be viewed with the following command:
+
+      rails --version
+
+<hr>
+
 # Contents #
 
 ## Courses ##
 
-The [courses](https://github.com/rsmwall/ruby-study/tree/main/courses) used are free
-and easy access, in addition to being online, being them in video or text format.
+Some [courses](https://github.com/rsmwall/ruby-study/tree/main/courses) used are free and easily accessible, in addition to being online, in video or text format. Others can be paid but can be accessed through the code in this repository, as I don't have the rights beyond the code I produced during the course. Paid courses are ticked.
 
 The courses marked with the following emoji: <img src="https://cdn.icon-icons.com/icons2/2087/PNG/512/brazil_icon_127818.png" width="18x"/> are <strong>Brazilian</strong> courses and/or that are in <strong>Portuguese</strong>.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/-Ruby-0D1117?style=for-the-badge&logo=ruby&logoColor=C60000&labelColor=181e26&textColor=0D1117">&nbsp;
+  <img src="https://img.shields.io/badge/-Ruby-white?style=for-the-badge&logo=ruby&logoColor=C60000&labelColor=white&textColor=0D1117">&nbsp;
+</picture>
+
 ### <img src="https://cdn.icon-icons.com/icons2/2087/PNG/512/brazil_icon_127818.png" width="22x"/> Guru-sp ###
+
+The Ruby version used is <strong>3.1.2p20</strong>.
 
 The guru-sp tutorial is available on the page [Ruby - Mais um tutorial](https://guru-sp.github.io/tutorial_ruby/).
 
@@ -34,9 +57,26 @@ Inside the folder are the tutorial subdivisions (numbered parts related to the t
 
 ### <img src="https://cdn.icon-icons.com/icons2/2087/PNG/512/brazil_icon_127818.png" width="22x"/> OneBitCode ###
 
+The Ruby version used is <strong>3.1.2p20</strong>.
+
 The OneBitCode tutorial is available in the youtube playlist [Curso completo de Ruby](https://www.youtube.com/playlist?list=PLdDT8if5attEOcQGPHLNIfnSFiJHhGDOZ).
 
 The tutorial is divided into ten videos in the youtube playlist and its codes here in this repositorio can be found in [onebitcode](https://github.com/rsmwall/ruby-studies/tree/main/courses/onebitcode). Inside there are sub-folders separated by video/content.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/-Ruby on Rails-0D1117?style=for-the-badge&logo=rubyonrails&logoColor=C60000&labelColor=181e26&textColor=0D1117">&nbsp;
+  <img src="https://img.shields.io/badge/-Ruby on Rails-white?style=for-the-badge&logo=rubyonrails&logoColor=C60000&labelColor=white&textColor=0D1117">&nbsp;
+</picture>
+
+### <img src="https://cdn.icon-icons.com/icons2/2087/PNG/512/brazil_icon_127818.png" width="22x"/> Ruby on Rails 5.x - Do início ao fim! 💲 ###
+
+The Ruby version used is <strong>3.2.0</strong>.
+The Rails version used is <strong>7.0.4</strong>.
+
+The Ruby on Rails 5.x - Do início ao fim! tutorial is available on the page [Ruby on Rails 5.x - Do início ao fim!](https://www.udemy.com/course/rubyonrails-5x/) - Udemy.
+
+The tutorial is divided into modules that here in the repository are in [rails-udemy](https://github.com/rsmwall/ruby-on-rails-studies/tree/main/courses/rails-udemy). 
+Inside the folder are the tutorial subdivisions (numbered parts related to the tutorial).
 
 ## Exercises ##
 
