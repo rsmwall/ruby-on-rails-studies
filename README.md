@@ -73,6 +73,8 @@ The tutorial is divided into ten videos in the youtube playlist and its codes he
 The Ruby version used is <strong>3.2.0</strong>.
 The Rails version used is <strong>7.0.4</strong>.
 
+The recommended versions of the course are Ruby 2.6.10 and Rails 5x, but it's been done on the most up-to-date versions at the moment.
+
 The Ruby on Rails 5.x - Do início ao fim! tutorial is available on the page [Ruby on Rails 5.x - Do início ao fim!](https://www.udemy.com/course/rubyonrails-5x/) - Udemy.
 
 The tutorial is divided into modules that here in the repository are in [rails-udemy](https://github.com/rsmwall/ruby-on-rails-studies/tree/main/courses/rails-udemy). 
