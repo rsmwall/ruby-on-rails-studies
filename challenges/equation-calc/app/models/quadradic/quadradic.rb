@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'equation'
+require '../equation'
 
-# class Equation
+# class Quadradic
 class Quadradic < Equation
 end
