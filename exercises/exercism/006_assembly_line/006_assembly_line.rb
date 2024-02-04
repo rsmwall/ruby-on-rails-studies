@@ -2,20 +2,21 @@
 
 # class Assembly
 class AssemblyLine
-  def initialize(hour)
-    @hour = hour
+  CARS_PER_HOUR = 221
+  def initialize(speed)
+    @speed = speed
   end
 
   def production_rate_per_hour
     rate =
-      if @hour < 5 then 1
-      elsif @hour < 9 then 0.9
-      elsif @hour == 9 then 0.8
+      if @speed < 5 then 1
+      elsif @speed < 9 then 0.9
+      elsif @speed == 9 then 0.8
       else
         0.77
       end
 
-    ((@hour * 221) * rate).to_f
+    ((@speed * CARS_PER_HOUR) * rate).to_f
   end
 
   def working_items_per_minute
