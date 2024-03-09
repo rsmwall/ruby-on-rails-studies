@@ -9,7 +9,7 @@ notas = [[], []]
   print 'Peso: '
   notas[1] << gets.chomp.to_i
 end
-
+q
 i = 0
 nota_peso = []
 3.times do
