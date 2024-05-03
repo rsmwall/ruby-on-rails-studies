@@ -15,7 +15,7 @@ class Bank
   # Bank Management
 
   def register(account)
-    @accounts << account
+    @accounts << account if search(account.number).nil?
   end
 
   def search(number)
@@ -36,11 +36,27 @@ class Bank
 
   def update(account)
     index = search_index(account.number)
-    @accounts[index] = account unless index.negative?
+    @accounts[index] = account unless index.nil? || index.negative?
   end
 
   def delete(number)
     @accounts.delete_at(search_index(number))
+  end
+
+  def count_accounts
+    @accounts.count
+  end
+
+  def total_balance
+    total = 0
+    @accounts.each do |account|
+      total += account.balance
+    end
+    total
+  end
+
+  def average_balance
+    total_balance / count_accounts
   end
 
   # Account Management
@@ -64,7 +80,7 @@ end
 
 acc = Account.new('1111', 1500)
 acc2 = Account.new('2222', 1000)
-
+acc3 = Account.new('3333', 1000)
 bk = Bank.new
 
 bk.register(acc)
@@ -75,3 +91,7 @@ puts bk.acc[1].balance
 bk.transfer('1111', '2222', 200)
 puts bk.acc[0].balance
 puts bk.acc[1].balance
+puts bk.register(acc3)
+puts bk.count_accounts
+puts bk.total_balance
+puts bk.average_balance
