@@ -76,4 +76,9 @@ class Bank
     account_dest = search(number_dest)
     account_origin&.transfer(account_dest, value)
   end
+
+  def yield_interest(number)
+    account = search(number)
+    account.yield_interest if !account.nil? && instance_of?(Savings)
+  end
 end
