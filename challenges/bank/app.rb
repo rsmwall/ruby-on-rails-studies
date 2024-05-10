@@ -16,34 +16,136 @@ class App
   end
 
   def menu
-    loop do
-      system('clear')
-      puts "Welcome\n\n"
-      puts @menu
-      print "\nEnter an option\n> "
-      option = gets.chomp.to_i
-      break unless option != 0
+    system('clear')
+    puts "> RafaBank\n\n"
+    puts @menu
+    print "\nEnter an option\n> "
+    option = gets.chomp.to_i
+
+    action(option)
+  end
+
+  def action(option)
+    case option
+    when 1 then register
+    when 2 then search
+    when 3 then withdraw
+    when 4 then deposit
+    when 5 then delete_acc
+    when 6 then transfer
+    when 7 then statistics
     end
+  end
+
+  def enter_key
+    puts "\nPress Enter to return to the menu..."
+    key = gets
+    menu if key == "\n"
+  end
+
+  def register
+    system('clear')
+    puts "> Register Account\n\n"
+    print "Enter the account number:\n> "
+    number = gets.chomp
+
+    account = Account.new(number, 0)
+    @bank.register(account)
+
+    system('clear')
+    puts 'Account registered successfully!'
+    enter_key
+  end
+
+  def search
+    system('clear')
+    puts "> Search Account\n\n"
+    print "Enter the account number:\n> "
+    number = gets.chomp
+
+    system('clear')
+    account = @bank.search(number)
+    search_result(account)
+  end
+
+  def search_result(account)
+    if account.nil?
+      puts 'Account not found!'
+    else
+      print "Account found!\n\n"
+      puts "Number: #{account.number}"
+      puts "Balance: #{account.balance}"
+    end
+    enter_key
+  end
+
+  def withdraw
+    system('clear')
+    puts "> Withdraw\n\n"
+    print "Enter the account number:\n> "
+    number = gets.chomp
+    print "\nEnter the value:\n> "
+    value = gets.chomp.to_f
+
+    @bank.withdraw(number, value)
+
+    system('clear')
+    enter_key
+  end
+
+  def deposit
+    system('clear')
+    puts "> Deposit\n\n"
+    print "Enter the account number:\n> "
+    number = gets.chomp
+    print "\nEnter the value:\n> "
+    value = gets.chomp.to_f
+
+    @bank.deposit(number, value)
+
+    system('clear')
+    enter_key
+  end
+
+  def delete_acc
+    system('clear')
+    puts "> Delete Account\n\n"
+    print "Enter the account number:\n> "
+    number = gets.chomp
+
+    @bank.delete(number)
+
+    system('clear')
+    puts 'Account deleted successfully!'
+    enter_key
+  end
+
+  def transfer
+    system('clear')
+    puts "> Transfer\n\n"
+    print "Enter the origin account number:\n> "
+    number_origin = gets.chomp
+    print "\nEnter the destination account number:\n> "
+    number_dest = gets.chomp
+    print "Enter the value:\n> "
+    value = gets.chomp.to_f
+
+    @bank.transfer(number_origin, number_dest, value)
+
+    system('clear')
+    enter_key
+  end
+
+  def statistics
+    system('clear')
+    puts "> Statistics\n\n"
+    puts "Number of accounts: #{@bank.count_accounts}"
+    puts "Total balance amount: #{@bank.total_balance}"
+    puts "Balance average: #{@bank.average_balance}"
+
+    enter_key
   end
 end
 
 app = App.new
 app.menu
-
-# acc = Account.new('1111', 1500)
-# acc2 = Account.new('2222', 1000)
-# acc3 = Account.new('3333', 1000)
-# bk = Bank.new
-
-# bk.register(acc)
-# bk.register(acc2)
-
-# puts bk.acc[0].balance
-# puts bk.acc[1].balance
-# bk.transfer('1111', '2222', 200)
-# puts bk.acc[0].balance
-# puts bk.acc[1].balance
-# puts bk.register(acc3)
-# puts bk.count_accounts
-# puts bk.total_balance
-# puts bk.average_balance
