@@ -25,3 +25,15 @@ class Account
     account_dest.deposit(value)
   end
 end
+
+# class Savings
+class Savings < Account
+  def initialize(number, balance, interest_tax)
+    super(number, balance)
+    @interest_tax = interest_tax
+  end
+
+  def yield_interest
+    deposit(@balance * (@interest_tax / 100))
+  end
+end
