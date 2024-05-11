@@ -28,6 +28,8 @@ end
 
 # class Savings
 class Savings < Account
+  attr_reader :interest_tax
+  
   def initialize(number, balance, interest_tax)
     super(number, balance)
     @interest_tax = interest_tax

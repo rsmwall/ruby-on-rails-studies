@@ -10,7 +10,7 @@ class App
     @menu = <<~END_MENU
       1. Register     2. Search     3. Withdraw
       4. Deposit      5. Delete     6. Transfer
-      7. Statistics
+      7. Statistics   8. Yield Interest
       0. Exit
     END_MENU
   end
@@ -34,6 +34,7 @@ class App
     when 5 then delete_acc
     when 6 then transfer
     when 7 then statistics
+    when 8 then yield_interest
     end
   end
 
@@ -49,7 +50,17 @@ class App
     print "Enter the account number:\n> "
     number = gets.chomp
 
-    account = Account.new(number, 0)
+    print "This is a savings account? (y/n):\n> "
+    option = gets.chomp
+
+    if option.downcase == 'y'
+      print "Interest tax:\n> "
+      tax = gets.chomp
+      account = Savings.new(number, 0, tax)
+    else
+      account = Account.new(number, 0)
+    end
+
     @bank.register(account)
 
     system('clear')
@@ -73,8 +84,10 @@ class App
       puts 'Account not found!'
     else
       print "Account found!\n\n"
-      puts "Number: #{account.number}"
+      puts account.instance_of?(Savings) ? "Savings Account\n" : "Standard Account\n"
+      puts "\nNumber: #{account.number}"
       puts "Balance: #{account.balance}"
+      puts "Interest tax: #{account.interest_tax}" if account.instance_of?(Savings)
     end
     enter_key
   end
@@ -143,6 +156,19 @@ class App
     puts "Total balance amount: #{@bank.total_balance}"
     puts "Balance average: #{@bank.average_balance}"
 
+    enter_key
+  end
+
+  def yield_interest
+    system('clear')
+    puts "> Yield Interest\n\n"
+    print "Enter the account number:\n> "
+    number = gets.chomp
+
+    @bank.yield_interest(number)
+
+    system('clear')
+    puts 'Successful operation!'
     enter_key
   end
 end
