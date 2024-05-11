@@ -28,14 +28,31 @@ end
 
 # class Savings
 class Savings < Account
-  attr_reader :interest_tax
-  
-  def initialize(number, balance, interest_tax)
+  attr_reader :interest_rate
+
+  def initialize(number, balance, interest_rate)
     super(number, balance)
-    @interest_tax = interest_tax
+    @interest_rate = interest_rate
   end
 
   def yield_interest
-    deposit(@balance * (@interest_tax / 100))
+    deposit(@balance * (@interest_rate / 100))
+  end
+end
+
+# class TaxAccount
+class TaxAccount < Account
+  attr_reader :discount_rate
+
+  def initialize(discount_rate)
+    super(number, balance)
+    @discount_rate = discount_rate
+  end
+
+  def withdraw(value)
+    return false if (@balance - value).negative?
+
+    discount_value = @balance * @discount_rate / 100
+    super.withdraw(value + discount_value)
   end
 end

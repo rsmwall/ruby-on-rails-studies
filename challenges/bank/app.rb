@@ -54,11 +54,20 @@ class App
     option = gets.chomp
 
     if option.downcase == 'y'
-      print "Interest tax:\n> "
+      print "Interest rate:\n> "
       tax = gets.chomp
       account = Savings.new(number, 0, tax)
     else
-      account = Account.new(number, 0)
+      print "This is a tax account? (y/n):\n> "
+      option = gets.chomp
+
+      if option.downcase == 'y'
+        print "Discount rate:\n> "
+        discount = gets.chomp
+        account = TaxAccount.new(number, 0, discount)
+      else
+        account = Account.new(number, 0)
+      end
     end
 
     @bank.register(account)
@@ -87,7 +96,7 @@ class App
       puts account.instance_of?(Savings) ? "Savings Account\n" : "Standard Account\n"
       puts "\nNumber: #{account.number}"
       puts "Balance: #{account.balance}"
-      puts "Interest tax: #{account.interest_tax}" if account.instance_of?(Savings)
+      puts "Interest tax: #{account.interest_rate}" if account.instance_of?(Savings)
     end
     enter_key
   end
