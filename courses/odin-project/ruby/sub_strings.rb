@@ -5,6 +5,7 @@ def substrings(string, dictionary)
   string.downcase.split.each do |element|
     new_string << dictionary.select { |word| element.include?(word) }
   end
+
   new_string.flatten.sort.each_with_object(Hash.new(0)) do |word, result|
     result[word] += 1
   end
